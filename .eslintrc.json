@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    "security"
+  ],
+  "extends": [
+    "standard-with-typescript",
+    "plugin:security/recommended"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["dist/"],
+  "rules": {
+    "@typescript-eslint/no-namespace": 0,
+    "no-inner-declarations": 0,
+    "complexity": ["error", 10],
+    "@typescript-eslint/camelcase": 0,
+    "dot-notation": 0,
+    "@typescript-eslint/naming-convention": 0
+  }
+}
